@@ -90,7 +90,7 @@ const UserPage = () => {
                   {formatDate(item.createdAt, true)}
                 </td>
                 <td className="px-6 py-4">
-                  <div className="flex">
+                  {/* <div className="flex">
                     {item.banned ? (
                       <button
                         onClick={() => setStatus(`/${item.id}`)}
@@ -106,7 +106,7 @@ const UserPage = () => {
                         Deactivate
                       </button>
                     )}
-                  </div>
+                  </div> */}
                 </td>
               </tr>
             ))}

@@ -22,7 +22,7 @@ const navItems: NavItem[] = [
   { name: "Auction", href: "auction", icon: <MdShop /> },
   { name: "User", href: "user", icon: <MdPeople /> },
   { name: "Transaction", href: "transaction", icon: <MdHistory /> },
-  { name: "Withdrawal", href: "withdrawal", icon: <MdCurrencyExchange /> },
+  // { name: "Withdrawal", href: "withdrawal", icon: <MdCurrencyExchange /> },
   { name: "Logout", href: "logout", icon: <MdLogout /> },
 ];
 
