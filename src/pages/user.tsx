@@ -9,7 +9,7 @@ import { User } from "~/models/User";
 import { makeToast } from "~/utils/makeToast";
 
 const UserPage = () => {
-  const { data, setStatus } = useUsers();
+  const { data } = useUsers();
 
   return (
     <DashboardLayout title="User">
