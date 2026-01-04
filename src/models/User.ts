@@ -3,6 +3,17 @@ import { Bid } from "./Bid";
 import { Transaction } from "./Transaction";
 import { Withdraw } from "./Withdraw";
 
+export type KycStatus = "Pending" | "Accepted" | "Rejected";
+
+export interface Kyc {
+  id: string;
+  userId: string;
+  image: string;
+  status: KycStatus;
+  createdAt: Date;
+  updatedAt: Date;
+}
+
 export interface User {
   id: string;
   name: string;
@@ -19,6 +30,8 @@ export interface User {
   auctions: Auction[];
   withdraws: Withdraw[];
   transactions: Transaction[];
+  kycs: Kyc[];
+  kyc: Kyc | null;
   createdAt: Date;
   updatedAt: Date;
 }
