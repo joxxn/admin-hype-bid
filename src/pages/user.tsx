@@ -210,7 +210,7 @@ const getKycStatusBadge = (kycs: Kyc[] | undefined) => {
 };
 
 const UserPage = () => {
-  const { data, updateKycStatus, refetch } = useUsers();
+  const { data, updateKycStatus, refetch, setStatus } = useUsers();
   const [selectedUser, setSelectedUser] = useState<User | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
